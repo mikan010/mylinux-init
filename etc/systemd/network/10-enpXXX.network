@@ -1,0 +1,13 @@
+[Match]
+Name=enp0s13f0u4u3
+# enp*** = "$ip link" InterfaceName
+
+[Network]
+# Address=192.168.10.10/24
+# Gateway=192.168.10.254
+# DNS=192.168.10.254
+DHCP=yes
+# DHCP=yes: IPv4 and IPv6, DHCP=ipv4: IPv4only, DHCP=ipv6: IPv6 only
+IPv6AcceptRA=true
+IPv6PrivacyExtensions=yes
+# Gateway=fe80::1

@@ -1,0 +1,10 @@
+[Match]
+Name=enp*
+Name=eth*
+
+[Network]
+DHCP=yes
+# DHCP=yes: IPv4 and IPv6, ipv4: IPv4only, ipv6: IPv6 only.
+IPv6AcceptRA=true
+IPv6PrivacyExtensions=yes
+
