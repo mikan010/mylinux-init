@@ -1,0 +1,13 @@
+#!/bin/bash
+
+rc=1
+
+libs=$(lsof -n +c 0 2> /dev/null | grep 'DEL.*lib' | awk '1 { print $1 ": " $NF }' | sort -u)
+if [[ -n $libs ]]; then
+    cat <<< $libs
+    echo "# LIBS: reboot required"
+    rc=0
+fi
+
+exit $rc
+
